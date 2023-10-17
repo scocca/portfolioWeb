@@ -1,0 +1,151 @@
+body{
+  background-image: url('./components/assets/subtle-prism.svg');
+  background-attachment: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#root{
+  width: 100%;
+  justify-content: center;
+}
+
+nav{
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-between;
+  padding: 0 ;
+  top: 0px;
+}
+
+#navbarcont.navbar-container{
+  width: 100%;
+  display: contents;
+}
+
+
+.navbar{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: hwb(271 17% 11% / 0.511);
+  height: 36px;
+}
+
+.navbar-left{
+  display: flex;
+}
+.navbar-left ul li ,
+.navbar-right ul li {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-inline: 12px;
+  padding: 0px;
+  height: 24px;
+  align-items: center;
+}
+.navbar-left ul li :hover,
+.navbar-right ul li :hover{
+  color: plum;
+  cursor: pointer;
+}
+.menu{
+  display: none;
+}
+.navbar-left ul,
+.navbar-right ul{
+  list-style: none;
+  padding:0px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+}
+.navbar-left ul{
+  margin-right: 50px;
+}
+
+.navbar-left ul:hover{
+  cursor: pointer;
+}
+
+.navbar-right{
+  margin-right: 50px;
+}
+
+.navbar-right ul:hover{
+  cursor: pointer;
+}
+
+.getInTouch{
+  font-weight: bold;
+}
+
+.list-name{
+  font-weight: bold;
+}
+
+.bigCard{
+  display: flex;
+  flex-direction: column; 
+  width: 95%;
+  margin-left: 2.5%;
+  height: 970px;
+  margin-top: 48px;
+  color: antiquewhite;
+  /* background-color: rgba(240, 248, 255, 0.333); */
+  border-radius: 15px;
+  justify-content: space-around;
+}
+
+.workProfile{
+  justify-content: center;
+  display: flex;
+  height: auto;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.name{
+  margin-top: 26px;
+  padding-right: 36px;
+}
+
+.profile-container{
+  width: 600px;
+}
+
+.profile{
+  width:450px;
+  font-size: 25px;
+  margin-top: 28px;
+  padding-left: 36px;
+}
+
+.personal-list{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.personal-profile{
+  justify-content: center;
+  display: flex;
+  height: auto;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.about-me{
+  margin-top: 50px;
+}
+
+.personal-list{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.personal{
+  font-size: 24px;
+  list-style:outside;
+}
