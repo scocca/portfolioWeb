@@ -4,9 +4,9 @@ import './App.css'
 import hiim from './components/assets/hi im.svg'
 import aboutme from './components/assets/About Me.svg'
 import photos from './components/assets/photospg.png'
-// import works from './components/assets/workingDecoration.svg'
-// import blur from './components/assets/blur.svg'
-// import bcircle from './components/assets/bigCircle.svg'
+import works from './components/assets/workingDecoration.svg'
+import blur from './components/assets/blur.svg'
+import bcircle from './components/assets/bigCircle.svg'
 
 
 import { NavBar } from './components/NavBar.js';
@@ -18,20 +18,12 @@ function App() {
   
   return (
     <React.Fragment>
-    
       <NavBar/>
       <Profile hiim={hiim} aboutme={aboutme} photos={photos}/>
-      <div>
-        <div>
-        {/* <WorkExperience/> */}
-        </div>
-        <div>
+      <WorkExperience works={works} blur={blur} bCircle={bcircle}/>
         {/* {jobsData.map((data, index) => (
           <DetailExperience key={index} {...data} />
-        ))} */}
-        </div>
-      </div>
-    
+        ))}  */}
     </React.Fragment>
   )
 

@@ -1,15 +1,10 @@
-
-
-function WorkExperience(){
+function WorkExperience({works, blur, bCircle}){
     return (
         <div className="workContainer">
-            <img src='./assets/workinExperience.svg' alt='work experience'/>
-             <div className='imgContainer'>
-                <img src='./assets/blur.svg' alt='work experience'/>
-                <img src='./assets/bigCircle.svg' alt='work experience'/>
-                <img src='./assets/bigCircle.svg' alt='work experience'/>
-                <img src='./assets/bigCircle.svg' alt='work experience'/>
-             </div>
+                <a id="circle-one" href="./assets/bigCircle.svg" className="circle-cont"/>
+                <a id="circle-two" href="./assets/bigCircle.svg" className="circle-cont"/>
+                <a id="circle-three" href="./assets/bigCircle.svg" className="circle-cont"/>
+                <span src={works} alt='work experience'/>
         </div>
     )
 }

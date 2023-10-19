@@ -149,3 +149,9 @@ nav{
   font-size: 24px;
   list-style:outside;
 }
+
+.circle-cont{
+  background-image: url('./components/assets/blur.svg');
+  width: 600px;
+  height: 600px;
+}
