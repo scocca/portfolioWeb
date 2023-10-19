@@ -20,10 +20,7 @@ function App() {
     <React.Fragment>
       <NavBar/>
       <Profile hiim={hiim} aboutme={aboutme} photos={photos}/>
-      <WorkExperience works={works} blur={blur} bCircle={bcircle}/>
-      {/* {jobsData.map((data, index) => (
-                    <DetailExperience key={index} jobs={jobs} />
-                    ))}  */}
+      <WorkExperience works={works} jobs={jobsData}/>
     </React.Fragment>
   )
 

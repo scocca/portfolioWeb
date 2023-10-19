@@ -85,47 +85,54 @@ body{
 }
 
 .big-header{
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin: 76px auto;
-  color: antiquewhite;
-  justify-content: space-around;
+  color: aliceblue;
+  width: 100%;
 }
 
+/* .profile-container{
+  display: flex;
+  flex-direction: column;
+  height: 676px;
+} */
+
 .workProfile{
-  justify-content: center;
   display: flex;
   height: auto;
   font-size: 26px;
   font-weight: 400;
-  align-items: self-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.work-profile-p{
+  width: 420px;
 }
 
 .name {
-  margin-top: 26px;
-  padding-right: 36px;
+  margin: 26px 26px auto;
   text-align: end;
-  width:640px;
+  width: 620px;
 }
 
 .hi-im{
   font-size: 60px;
-  margin-block-end: 0px;
-  line-height: 40px;
+  margin: 0;
 }
 
 .santiago{
   display: block;
-  white-space: nowrap;
-  width:640px;
-  border-right: 4px solid;
   font-size: 140px;
+  
   font-weight: 700;
-  margin-block: 0px;
   line-height: 190px;
-  animation: typing 2s steps(8),
-  blink .5s infinite step-end alternate;
-  overflow:hidden;
+  margin: auto 0 auto auto;
+
+  width: 580px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(8), blink .5s infinite step-end alternate;
 }
 
 @keyframes typing{
@@ -138,35 +145,27 @@ body{
 
 .cocca{
   display: block;
-  white-space: nowrap;
-  width:8ch;
   border-right: 4px solid;
   font-size: 140px;
   font-weight: 700;
-  margin-block: 0px;
   line-height: 120px;
-  animation: typing 2s steps(5),
-  blink .5s infinite step-end alternate;
-  overflow:hidden;
+  margin: auto 0 auto auto;
+  width: 376px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(4), blink .7s infinite step-end alternate;
+
 }
 
-@keyframes typing{
-  from {width: 0;}
-}
-
-@keyframes blink{
-  50% {border-color: transparent;}
-}
 
 .Web-developer{
-  line-height: 40px;
   font-size: 60px;
-  margin-block: 33px;
+  margin: 33px 0 auto;
 }
 
 
 .profile-container{
-  width: 600px;
+  width: 530px;
 }
 
 .profile{
@@ -208,6 +207,21 @@ body{
   list-style:outside;
 }
 
+.experience-text {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0 auto 12px;
+  text-align: start;
+  width: 100%;
+  color: aliceblue;
+}
+
+.graphics-container {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
 .we-bg{
   background-image: url('./components/assets/blur.svg');
   background-repeat: no-repeat;
@@ -224,14 +238,14 @@ body{
   display: flex;
   position: absolute;
   left: 36px;
-  top: 197px;
+  top: 28px;
 }
 
 .circle-cont-1 {
   display: flex;
   position: absolute;
   left: 220px;
-  top: 334px;
+  top: 186px;
   transform: scale(0.7);
 }
 
@@ -239,7 +253,7 @@ body{
   display: flex;
   position: absolute;
   left: 112px;
-  top: 469px;
+  top: 269px;
   transform: scale(0.4);
 }
 
@@ -261,15 +275,37 @@ body{
 
 .left{
   display: flex;
-  width: 34%;
 }
 
 .right{
   display: flex;
   width: 66%;
-  background: black;
+  flex-direction: column;
+  color: azure;
 }
 
 .r{
   position: relative;
+}
+
+.jobs-container{
+    display: flex;
+    align-items: baseline;
+    margin: 0 12px 0 auto;
+    height: 34px;
+}
+
+.job-name-h2{
+  margin: 0 12px 0 0;
+  font-size: 28px;
+}
+
+.years-p {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.tasks-ul{
+  margin: 10px 0 16px 0;
 }

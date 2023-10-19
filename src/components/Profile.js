@@ -13,9 +13,9 @@ function Profile({hiim,aboutme,photos}){
           {/* <img src={hiim} alt='hi i`m Santiago Cocca Web Developer'/> */}
         </div>
         <div className='profile-container'>
-          <p className='work-profile'>As a proactive and persistent professional, I enjoy learning & teaching new things and facing challenges with determination.</p>
-          <p className='work-profile'>A fervent believer in the value of teamwork & its power to achieve exceptional goals.</p>
-          <p className='work-profile'>Hope to get opportunity to apply my skills and experience to make a significant contribution in workplaces and achieve ambitious goals collaboratively.</p>
+          <p className='work-profile-p'>As a proactive and persistent professional, I enjoy learning & teaching new things and facing challenges with determination.</p>
+          <p className='work-profile-p'>A fervent believer in the value of teamwork & its power to achieve exceptional goals.</p>
+          <p className='work-profile-p'>Hope to get opportunity to apply my skills and experience to make a significant contribution in workplaces and achieve ambitious goals collaboratively.</p>
         </div>
         </div>
 
