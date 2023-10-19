@@ -1,5 +1,5 @@
 import React from 'react'
-// import jobsData from './workData.json'
+import jobsData from './workData.json'
 import './App.css'
 import hiim from './components/assets/hi im.svg'
 import aboutme from './components/assets/About Me.svg'
@@ -21,9 +21,9 @@ function App() {
       <NavBar/>
       <Profile hiim={hiim} aboutme={aboutme} photos={photos}/>
       <WorkExperience works={works} blur={blur} bCircle={bcircle}/>
-        {/* {jobsData.map((data, index) => (
-          <DetailExperience key={index} {...data} />
-        ))}  */}
+      {/* {jobsData.map((data, index) => (
+                    <DetailExperience key={index} jobs={jobs} />
+                    ))}  */}
     </React.Fragment>
   )
 

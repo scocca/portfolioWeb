@@ -2,8 +2,8 @@
 
 function NavBar(){
     return(
-        <nav>
-        <navbar className='navbar'>
+        <navbar className="nav-main">
+        <div className='navbar'>
           <div className='navbar-right'>
             <ul className='right-list'>
               <li className='list-name'>Santiago Cocca</li>
@@ -18,8 +18,8 @@ function NavBar(){
               <li className='getInTouch'>Get in Touch</li>
             </ul>
           </div>
-        </navbar>
-      </nav>
+        </div>
+      </navbar>
     )
 }
 

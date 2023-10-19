@@ -3,10 +3,14 @@
 function Profile({hiim,aboutme,photos}){
     
     return(
-        <div className='bigCard'>
+        <div className='big-header'>
         <div className='workProfile'>
         <div className='name'>
-          <img src={hiim} alt='hi i`m Santiago Cocca Web Developer'/>
+          <h3 className="hi-im">Hi i'm</h3>
+          <span className="santiago">Santiago</span>
+          <span className="cocca">Cocca</span>
+          <h3 className="Web-developer"> Web Developer</h3>
+          {/* <img src={hiim} alt='hi i`m Santiago Cocca Web Developer'/> */}
         </div>
         <div className='profile-container'>
           <p className='work-profile'>As a proactive and persistent professional, I enjoy learning & teaching new things and facing challenges with determination.</p>
@@ -18,7 +22,8 @@ function Profile({hiim,aboutme,photos}){
         <div className='personal-profile'>
           <div className='about-me'>
             <div>
-              <img src={aboutme} alt='my hobbies'/>
+              <h3 className="about-me">About Me</h3>
+              {/* <img src={aboutme} alt='my hobbies'/> */}
             </div>
             <div>
             <ul className='personal-list'>My Hobbies
