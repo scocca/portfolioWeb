@@ -227,8 +227,8 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 440px;
-  height: 440px;
+  width: auto;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,25 +237,69 @@ body{
 .circle-cont {
   display: flex;
   position: absolute;
-  left: 36px;
-  top: 28px;
+  left: 10%;
+  top: 15%;
+  animation: movement 3.5s ease-in-out infinite;
+}
+
+@keyframes movement{
+  0% {left:10%;
+        top:13%}
+  25% {left:13%;
+       top:17%}
+  50% {left:7%;
+        top:22%}
+  75%{ left:2%;
+        top:17%}
+  100%{left:10%;
+        top:13%;}
 }
 
 .circle-cont-1 {
   display: flex;
   position: absolute;
-  left: 220px;
-  top: 186px;
+  left: 50%;
+  top: 40%;
   transform: scale(0.7);
+  animation: movement1 2.8s ease-in-out infinite;
 }
+
+@keyframes movement1{
+  0% {left:50%;
+        top:40%}
+  25% {left:43%;
+       top:47%}
+  50% {left:48%;
+        top:52%}
+  75%{ left:51%;
+        top:47%}
+  100%{left:50%;
+        top:40%;}
+}
+
 
 .circle-cont-2 {
   display: flex;
   position: absolute;
-  left: 112px;
-  top: 269px;
+  left: 15%;
+  top: 70%;
   transform: scale(0.4);
+  animation: movement2 2s ease-in-out infinite;
 }
+
+@keyframes movement2{
+  0% {left:15%;
+        top:70%}
+  25% {left:20%;
+       top:75%}
+  50% {left:15%;
+        top:80%}
+  75%{ left:10%;
+        top:75%}
+  100%{left:15%;
+        top:70%;}
+}
+
 
 .circle-inner{
   background-image: url('./components/assets/bigCircle.svg');
