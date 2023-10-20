@@ -1,5 +1,7 @@
 function Skills({skills}){
     return(
+    <div className="skills-container">
+        <h2 className="skills-h">Skills</h2>
         <div className="main-card-container">
                     {skills.map((skills, index) => (
                     <div key={index} className="card-container">
@@ -13,6 +15,7 @@ function Skills({skills}){
             </div>
             ))}
         </div>
+    </div>
     )
 }
 
