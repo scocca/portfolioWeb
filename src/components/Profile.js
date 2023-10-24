@@ -1,6 +1,6 @@
 
 
-function Profile({hiim,aboutme,photos}){
+function Profile({photo1, photo2, photo3, photo4, photo5}){
     
     return(
         <div className='big-header'>
@@ -10,7 +10,6 @@ function Profile({hiim,aboutme,photos}){
           <span className="santiago">Santiago</span>
           <span className="cocca">Cocca</span>
           <h3 className="Web-developer"> Web Developer</h3>
-          {/* <img src={hiim} alt='hi i`m Santiago Cocca Web Developer'/> */}
         </div>
         <div className='profile-container'>
           <p className='work-profile-p'>As a proactive and persistent professional, I enjoy learning & teaching new things and facing challenges with determination.</p>
@@ -23,7 +22,6 @@ function Profile({hiim,aboutme,photos}){
           <div className='about-me'>
             <div>
               <h3 className="about-me">About Me</h3>
-              {/* <img src={aboutme} alt='my hobbies'/> */}
             </div>
             <div>
             <ul className='personal-list'>My Hobbies
@@ -39,7 +37,14 @@ function Profile({hiim,aboutme,photos}){
             </div>
           </div>
           <div className='photos'>
-            <img src={photos} alt='my photos'/>
+            <section className='photo-librarie'>
+              <img src={photo1} alt='my photos'/>
+              <img src={photo2} alt='my photos'/>
+              <img src={photo3} alt='my photos'/>
+              <img src={photo4} alt='my photos'/>
+              <img src={photo5} alt='my photos'/>
+            </section>
+            
           </div>
         </div>
 

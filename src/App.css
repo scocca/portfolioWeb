@@ -1,6 +1,7 @@
 body{
   background-image: url('./components/assets/subtle-prism.svg');
   background-attachment: fixed;
+  background-size: cover;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -167,6 +168,7 @@ body{
 
 .profile-container{
   width: 530px;
+  margin-top: 20px;
 }
 
 .profile{
@@ -196,6 +198,30 @@ body{
   margin-bottom: 0px;
   font-size: 60px;
   line-height: 40px;
+}
+
+section{
+  display: flex;
+  width: 600px;
+  height: 430px;
+  margin-inline: 24px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+section img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
 .personal-list{
@@ -394,7 +420,7 @@ body{
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background: linear-gradient(45deg, #3339CF, #1BA462, #DEF9FA, #3339CF, #3339CF, #1BA462, #DEF9FA, #3339CF);
   background-size: 800%;
   border-radius: 10px;
   filter: blur(8px);
@@ -438,13 +464,13 @@ body{
 
 .title-container{
   font-size: 36px;
-  margin: 4px 0 0 12px;
+  margin: 0 0 0 12px;
 }
 
 .recognition-detail{    display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-inline: 70px;
+  margin-left: 180px;
 }
 
   .recog-year{
