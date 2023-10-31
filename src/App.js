@@ -2,7 +2,6 @@ import React from 'react'
 import jobsData from './workData.json'
 import skillsData from './skills.json'
 import './App.css'
-
 import works from './components/assets/workingDecoration.svg'
 import photo1 from './components/assets/_DSC3911.JPG' 
 import photo2 from './components/assets/20220711_171031.jpg'
@@ -17,6 +16,7 @@ import { Profile } from './components/Profile.js';
 import { WorkExperience } from './components/WorkExperience.js';
 import { Skills } from './components/Skills.js'
 import { Recognitions } from './components/Recognitions'
+import { WhatsApp } from './components/WhatsApp'
 
 // import { DetailExperience } from './components/DetailExperience.js';
 
@@ -29,6 +29,7 @@ function App() {
       <WorkExperience works={works} jobs={jobsData}/>
       <Skills skills={skillsData}/>
       <Recognitions/>
+      <WhatsApp/>
     </React.Fragment>
   )
 
